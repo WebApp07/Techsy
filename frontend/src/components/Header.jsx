@@ -8,13 +8,23 @@ import {
   NavbarCollapse,
 } from "react-bootstrap";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
+import logo from "../assets/logo1.svg";
 
 const Header = () => {
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="md" collapseOnSelect>
         <Container>
-          <NavbarBrand href="/">Techsy</NavbarBrand>
+          <NavbarBrand href="/">
+            <img
+              src={logo}
+              alt="Techsy"
+              style={{
+                maxWidth: "200px",
+                maxHeight: "200px",
+              }}
+            />
+          </NavbarBrand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
