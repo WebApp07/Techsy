@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Nav, Container, NavbarBrand } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
-import logo from "../assets/logo1.svg";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
@@ -10,14 +10,10 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" expand="md" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <img
-              src={logo}
-              alt="Techsy"
-              style={{
-                maxWidth: "200px",
-                maxHeight: "200px",
-              }}
-            />
+            <Navbar.Brand>
+              <img src={logo} alt="ProShop" />
+              Techsy
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
