@@ -25,7 +25,7 @@ const reviewsSchema = new mongoose.Schema(
   }
 );
 
-const productScheme = new mongoose.Schema(
+const productSchema = new mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
@@ -49,7 +49,7 @@ const productScheme = new mongoose.Schema(
       type: String,
       required: true,
     },
-    reviews: [reviewSchema],
+    reviews: [reviewsSchema],
     rating: {
       type: Number,
       required: true,
@@ -76,6 +76,6 @@ const productScheme = new mongoose.Schema(
   }
 );
 
-const Product = mongoose.model("Product", productScheme);
+const Product = mongoose.model("Product", productSchema);
 
 export default Product;
