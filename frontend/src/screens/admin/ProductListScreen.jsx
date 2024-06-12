@@ -9,7 +9,7 @@ import {
   useCreateProductMutation,
 } from "../../slices/productApiSlice";
 import { toast } from "react-toastify";
-
+import { Link } from "react-router-dom";
 const ProductListScreen = () => {
   const { data: products, isLoading, error, refetch } = useGetProductsQuery();
 
@@ -71,11 +71,14 @@ const ProductListScreen = () => {
                   <td>{product.category}</td>
                   <td>{product.brand}</td>
                   <td>
-                    <LinkContainer to={`/products/${product._id}/edit`}>
-                      <Button variant="light" className="btn-sm">
-                        <FaEdit />
-                      </Button>
-                    </LinkContainer>
+                    <Button
+                      as={Link}
+                      to={`/admin/product/${product._id}/edit`}
+                      variant="light"
+                      className="btn-sm mx-2"
+                    >
+                      <FaEdit />
+                    </Button>
                     <Button
                       variant="danger"
                       className="btn-sm"
