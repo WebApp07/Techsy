@@ -74,6 +74,7 @@ const router = createBrowserRouter(
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+  <meta name="google-site-verification" content="8-6SxrAerZt5dyIRln57Haw2RoOjcXG5Ia5zl1KH0ws" />
     <HelmetProvider>
       <Provider store={store}>
         <PayPalScriptProvider deferLoading={true}>
