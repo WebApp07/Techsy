@@ -18,7 +18,7 @@ const ProductCarousel = () => {
               <h2 className="text-white text-right">
                 {product.name} (${product.price})
               </h2>
-              <p className="text-white text-right">{product.description}</p>
+             
             </Carousel.Caption>
           </Link>
         </Carousel.Item>
