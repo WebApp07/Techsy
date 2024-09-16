@@ -13,6 +13,7 @@ const Footer = () => {
             <p>
               Techsy &copy; {startedYear} - {currentYear}
             </p>
+            <p>Contact Us: techsey@proton.me</p>
           </Col>
         </Row>
       </Container>
