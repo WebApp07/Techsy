@@ -206,7 +206,13 @@ const OrderScreen = () => {
                 <ListGroup.Item>
                 <Row>
                   <Col>Items:</Col>
-                  <Col>${order.itemsPrice}</Col>
+                  <Col>
+                    $
+                    {cart.cartItems.reduce(
+                      (acc, item) => acc + item.price * item.qty,
+                      0
+                    )}
+                  </Col>
                 </Row>
              
               <ListGroup.Item>
