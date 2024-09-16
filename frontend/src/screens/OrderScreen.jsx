@@ -207,11 +207,7 @@ const OrderScreen = () => {
                 <Row>
                   <Col>Items:</Col>
                   <Col>
-                    $
-                    {cart.cartItems.reduce(
-                      (acc, item) => acc + item.price * item.qty,
-                      0
-                    )}
+                   ${order.itemsPrice}
                   </Col>
                 </Row>
              
