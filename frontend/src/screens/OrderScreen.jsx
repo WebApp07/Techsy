@@ -202,6 +202,12 @@ const OrderScreen = () => {
               <ListGroup.Item>
                 <h2>Order Summary</h2>
               </ListGroup.Item>
+
+                <ListGroup.Item>
+                <Row>
+                  <Col>Items:</Col>
+                  <Col>${order.itemsPrice}</Col>
+                </Row>
              
               <ListGroup.Item>
                 <Row>
